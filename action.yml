@@ -1,0 +1,23 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/
+
+name: 'Xcode Staple'
+description: 'Attach ticket for notarized executables to app bundles, disk images, and packages.'
+
+inputs:
+  product-path:
+    description: ""
+    required: true
+  verbose:
+    description: ""
+    required: false
+    default: false
+
+outputs:
+  product-path:
+    description: ""
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

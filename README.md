@@ -1,0 +1,2 @@
+# xcode-staple
+Xcode Staple
