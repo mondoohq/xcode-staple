@@ -45,7 +45,7 @@ const staplerExitCodes = {
 
 const parseConfiguration = () => {
     return {
-        verbose: core.getInput("verbose") == "true",
+        verbose: core.getInput("verbose") === "true",
         productPath: core.getInput("product-path", {required: true})
     };
 };
@@ -65,7 +65,6 @@ const main = async () => {
     try {
         const configuration = parseConfiguration();
         await staple(configuration);
-        core.setOutput('product-path', configuration.productPath);
     } catch (error) {
         core.setFailed(`Stapling failed with an unexpected error: ${error.message}`);
     }
