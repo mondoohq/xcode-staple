@@ -1,3 +1,5 @@
+___This is an work of devbotsxyz, who's account is now removed from GitHub.  We appreciate his contribution to the community!___
+
 # Xcode Staple
 
 This Action staples notary service tickets to macOS products.
